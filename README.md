@@ -8,8 +8,8 @@ kitome.batch: file containing all the Mothur commands to process raw DNA sequenc
 
 kitome.logfile: Mothur's logfile produced by running kitome.batch.
 
-kitome.final.Rscript: R script with all the analyses presented in the paper.
+kitome.final.Rscript: R script for reproducing the analyses presented in the paper.
 
-All other files are necessary when running kitome.final.Rscript.
+All other files are necessary for running kitome.final.Rscript.
 
 Contact: jsescobar@serviciosnutresa.com
