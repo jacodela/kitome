@@ -1,0 +1,1881 @@
+Linux version
+
+Using ReadLine
+
+Using default file location /share/apps/mothur/1.39.0/intel/2017_update-1/bin/
+
+Running 64Bit Version
+
+mothur v.1.39.0
+Last updated: 1/23/2017
+
+by
+Patrick D. Schloss
+
+Department of Microbiology & Immunology
+University of Michigan
+http://www.mothur.org
+
+When using, please cite:
+Schloss, P.D., et al., Introducing mothur: Open-source, platform-independent, community-supported software for describing and comparing microbial communities. Appl Environ Microbiol, 2009. 75(23):7537-41.
+
+Distributed under the GNU General Public License
+
+Type 'help()' for information on the commands that are available
+
+For questions and analysis support, please visit our forum at https://www.mothur.org/forum
+
+Type 'quit()' to exit program
+Script Mode
+
+
+mothur > make.contigs(file=stability.files)
+
+Using 1 processors.
+
+>>>>>	Processing file pair 120_D1_MB_S218_L001_R1_001.fastq - 120_D1_MB_S218_L001_R2_001.fastq (files 1 of 70)	<<<<<
+Making contigs...
+Done.
+
+It took 78 secs to assemble 82505 reads.
+
+
+>>>>>	Processing file pair 120_D1_QIA_S191_L001_R1_001.fastq - 120_D1_QIA_S191_L001_R2_001.fastq (files 2 of 70)	<<<<<
+Making contigs...
+Done.
+
+It took 34 secs to assemble 36284 reads.
+
+
+>>>>>	Processing file pair 120_D2_MB_S214_L001_R1_001.fastq - 120_D2_MB_S214_L001_R2_001.fastq (files 3 of 70)	<<<<<
+Making contigs...
+Done.
+
+It took 48 secs to assemble 51127 reads.
+
+
+>>>>>	Processing file pair 120_D2_QIA_S220_L001_R1_001.fastq - 120_D2_QIA_S220_L001_R2_001.fastq (files 4 of 70)	<<<<<
+Making contigs...
+Done.
+
+It took 39 secs to assemble 42090 reads.
+
+
+>>>>>	Processing file pair 120_D3_MB_S208_L001_R1_001.fastq - 120_D3_MB_S208_L001_R2_001.fastq (files 5 of 70)	<<<<<
+Making contigs...
+Done.
+
+It took 53 secs to assemble 57325 reads.
+
+
+>>>>>	Processing file pair 120_D3_QIA_S184_L001_R1_001.fastq - 120_D3_QIA_S184_L001_R2_001.fastq (files 6 of 70)	<<<<<
+Making contigs...
+Done.
+
+It took 2 secs to assemble 1760 reads.
+
+
+>>>>>	Processing file pair 120_D4_MB_S182_L001_R1_001.fastq - 120_D4_MB_S182_L001_R2_001.fastq (files 7 of 70)	<<<<<
+Making contigs...
+Done.
+
+It took 28 secs to assemble 29976 reads.
+
+
+>>>>>	Processing file pair 120_D4_QIA_S221_L001_R1_001.fastq - 120_D4_QIA_S221_L001_R2_001.fastq (files 8 of 70)	<<<<<
+Making contigs...
+Done.
+
+It took 2 secs to assemble 2251 reads.
+
+
+>>>>>	Processing file pair 120_D5_MB_S172_L001_R1_001.fastq - 120_D5_MB_S172_L001_R2_001.fastq (files 9 of 70)	<<<<<
+Making contigs...
+Done.
+
+It took 18 secs to assemble 19404 reads.
+
+
+>>>>>	Processing file pair 120_D5_QIA_S143_L001_R1_001.fastq - 120_D5_QIA_S143_L001_R2_001.fastq (files 10 of 70)	<<<<<
+Making contigs...
+Done.
+
+It took 0 secs to assemble 165 reads.
+
+
+>>>>>	Processing file pair 120_SD_MB_S187_L001_R1_001.fastq - 120_SD_MB_S187_L001_R2_001.fastq (files 11 of 70)	<<<<<
+Making contigs...
+Done.
+
+It took 33 secs to assemble 35306 reads.
+
+
+>>>>>	Processing file pair 120_SD_QIA_S157_L001_R1_001.fastq - 120_SD_QIA_S157_L001_R2_001.fastq (files 12 of 70)	<<<<<
+Making contigs...
+Done.
+
+It took 49 secs to assemble 52141 reads.
+
+
+>>>>>	Processing file pair 226_D1_MB_S209_L001_R1_001.fastq - 226_D1_MB_S209_L001_R2_001.fastq (files 13 of 70)	<<<<<
+Making contigs...
+Done.
+
+It took 46 secs to assemble 49332 reads.
+
+
+>>>>>	Processing file pair 226_D1_QIA_S213_L001_R1_001.fastq - 226_D1_QIA_S213_L001_R2_001.fastq (files 14 of 70)	<<<<<
+Making contigs...
+Done.
+
+It took 48 secs to assemble 51223 reads.
+
+
+>>>>>	Processing file pair 226_D2_MB_S145_L001_R1_001.fastq - 226_D2_MB_S145_L001_R2_001.fastq (files 15 of 70)	<<<<<
+Making contigs...
+Done.
+
+It took 37 secs to assemble 39955 reads.
+
+
+>>>>>	Processing file pair 226_D2_QIA_S201_L001_R1_001.fastq - 226_D2_QIA_S201_L001_R2_001.fastq (files 16 of 70)	<<<<<
+Making contigs...
+Done.
+
+It took 40 secs to assemble 43122 reads.
+
+
+>>>>>	Processing file pair 226_D3_MB_S161_L001_R1_001.fastq - 226_D3_MB_S161_L001_R2_001.fastq (files 17 of 70)	<<<<<
+Making contigs...
+Done.
+
+It took 1 secs to assemble 619 reads.
+
+
+>>>>>	Processing file pair 226_D3_QIA_S169_L001_R1_001.fastq - 226_D3_QIA_S169_L001_R2_001.fastq (files 18 of 70)	<<<<<
+Making contigs...
+Done.
+
+It took 0 secs to assemble 130 reads.
+
+
+>>>>>	Processing file pair 226_D4_MB_S164_L001_R1_001.fastq - 226_D4_MB_S164_L001_R2_001.fastq (files 19 of 70)	<<<<<
+Making contigs...
+Done.
+
+It took 1 secs to assemble 970 reads.
+
+
+>>>>>	Processing file pair 226_D4_QIA_S204_L001_R1_001.fastq - 226_D4_QIA_S204_L001_R2_001.fastq (files 20 of 70)	<<<<<
+Making contigs...
+Done.
+
+It took 0 secs to assemble 307 reads.
+
+
+>>>>>	Processing file pair 226_D5_MB_S181_L001_R1_001.fastq - 226_D5_MB_S181_L001_R2_001.fastq (files 21 of 70)	<<<<<
+Making contigs...
+Done.
+
+It took 33 secs to assemble 34697 reads.
+
+
+>>>>>	Processing file pair 226_D5_QIA_S176_L001_R1_001.fastq - 226_D5_QIA_S176_L001_R2_001.fastq (files 22 of 70)	<<<<<
+Making contigs...
+Done.
+
+It took 0 secs to assemble 88 reads.
+
+
+>>>>>	Processing file pair 226_SD_MB_S186_L001_R1_001.fastq - 226_SD_MB_S186_L001_R2_001.fastq (files 23 of 70)	<<<<<
+Making contigs...
+Done.
+
+It took 39 secs to assemble 42534 reads.
+
+
+>>>>>	Processing file pair 226_SD_QIA_S185_L001_R1_001.fastq - 226_SD_QIA_S185_L001_R2_001.fastq (files 24 of 70)	<<<<<
+Making contigs...
+Done.
+
+It took 50 secs to assemble 53877 reads.
+
+
+>>>>>	Processing file pair 294_D1_MB_S197_L001_R1_001.fastq - 294_D1_MB_S197_L001_R2_001.fastq (files 25 of 70)	<<<<<
+Making contigs...
+Done.
+
+It took 51 secs to assemble 54707 reads.
+
+
+>>>>>	Processing file pair 294_D1_QIA_S212_L001_R1_001.fastq - 294_D1_QIA_S212_L001_R2_001.fastq (files 26 of 70)	<<<<<
+Making contigs...
+Done.
+
+It took 35 secs to assemble 37141 reads.
+
+
+>>>>>	Processing file pair 294_D2_MB_S142_L001_R1_001.fastq - 294_D2_MB_S142_L001_R2_001.fastq (files 27 of 70)	<<<<<
+Making contigs...
+Done.
+
+It took 39 secs to assemble 41596 reads.
+
+
+>>>>>	Processing file pair 294_D2_QIA_S179_L001_R1_001.fastq - 294_D2_QIA_S179_L001_R2_001.fastq (files 28 of 70)	<<<<<
+Making contigs...
+Done.
+
+It took 28 secs to assemble 29964 reads.
+
+
+>>>>>	Processing file pair 294_D3_MB_S155_L001_R1_001.fastq - 294_D3_MB_S155_L001_R2_001.fastq (files 29 of 70)	<<<<<
+Making contigs...
+Done.
+
+It took 59 secs to assemble 63219 reads.
+
+
+>>>>>	Processing file pair 294_D3_QIA_S200_L001_R1_001.fastq - 294_D3_QIA_S200_L001_R2_001.fastq (files 30 of 70)	<<<<<
+Making contigs...
+Done.
+
+It took 5 secs to assemble 5820 reads.
+
+
+>>>>>	Processing file pair 294_D4_MB_S199_L001_R1_001.fastq - 294_D4_MB_S199_L001_R2_001.fastq (files 31 of 70)	<<<<<
+Making contigs...
+Done.
+
+It took 60 secs to assemble 64400 reads.
+
+
+>>>>>	Processing file pair 294_D4_QIA_S195_L001_R1_001.fastq - 294_D4_QIA_S195_L001_R2_001.fastq (files 32 of 70)	<<<<<
+Making contigs...
+Done.
+
+It took 0 secs to assemble 228 reads.
+
+
+>>>>>	Processing file pair 294_D5_MB_S141_L001_R1_001.fastq - 294_D5_MB_S141_L001_R2_001.fastq (files 33 of 70)	<<<<<
+Making contigs...
+Done.
+
+It took 27 secs to assemble 28799 reads.
+
+
+>>>>>	Processing file pair 294_D5_QIA_S205_L001_R1_001.fastq - 294_D5_QIA_S205_L001_R2_001.fastq (files 34 of 70)	<<<<<
+Making contigs...
+Done.
+
+It took 0 secs to assemble 227 reads.
+
+
+>>>>>	Processing file pair 294_SD_MB_S167_L001_R1_001.fastq - 294_SD_MB_S167_L001_R2_001.fastq (files 35 of 70)	<<<<<
+Making contigs...
+Done.
+
+It took 16 secs to assemble 16604 reads.
+
+
+>>>>>	Processing file pair 294_SD_QIA_S154_L001_R1_001.fastq - 294_SD_QIA_S154_L001_R2_001.fastq (files 36 of 70)	<<<<<
+Making contigs...
+Done.
+
+It took 55 secs to assemble 59146 reads.
+
+
+>>>>>	Processing file pair 390_D1_MB_S210_L001_R1_001.fastq - 390_D1_MB_S210_L001_R2_001.fastq (files 37 of 70)	<<<<<
+Making contigs...
+Done.
+
+It took 56 secs to assemble 60366 reads.
+
+
+>>>>>	Processing file pair 390_D1_QIA_S170_L001_R1_001.fastq - 390_D1_QIA_S170_L001_R2_001.fastq (files 38 of 70)	<<<<<
+Making contigs...
+Done.
+
+It took 17 secs to assemble 18238 reads.
+
+
+>>>>>	Processing file pair 390_D2_MB_S162_L001_R1_001.fastq - 390_D2_MB_S162_L001_R2_001.fastq (files 39 of 70)	<<<<<
+Making contigs...
+Done.
+
+It took 17 secs to assemble 18232 reads.
+
+
+>>>>>	Processing file pair 390_D2_QIA_S160_L001_R1_001.fastq - 390_D2_QIA_S160_L001_R2_001.fastq (files 40 of 70)	<<<<<
+Making contigs...
+Done.
+
+It took 80 secs to assemble 86061 reads.
+
+
+>>>>>	Processing file pair 390_D3_MB_S224_L001_R1_001.fastq - 390_D3_MB_S224_L001_R2_001.fastq (files 41 of 70)	<<<<<
+Making contigs...
+Done.
+
+It took 49 secs to assemble 52388 reads.
+
+
+>>>>>	Processing file pair 390_D3_QIA_S153_L001_R1_001.fastq - 390_D3_QIA_S153_L001_R2_001.fastq (files 42 of 70)	<<<<<
+Making contigs...
+Done.
+
+It took 33 secs to assemble 35181 reads.
+
+
+>>>>>	Processing file pair 390_D4_MB_S222_L001_R1_001.fastq - 390_D4_MB_S222_L001_R2_001.fastq (files 43 of 70)	<<<<<
+Making contigs...
+Done.
+
+It took 13 secs to assemble 13885 reads.
+
+
+>>>>>	Processing file pair 390_D4_QIA_S193_L001_R1_001.fastq - 390_D4_QIA_S193_L001_R2_001.fastq (files 44 of 70)	<<<<<
+Making contigs...
+Done.
+
+It took 4 secs to assemble 4144 reads.
+
+
+>>>>>	Processing file pair 390_D5_MB_S192_L001_R1_001.fastq - 390_D5_MB_S192_L001_R2_001.fastq (files 45 of 70)	<<<<<
+Making contigs...
+Done.
+
+It took 34 secs to assemble 37322 reads.
+
+
+>>>>>	Processing file pair 390_D5_QIA_S178_L001_R1_001.fastq - 390_D5_QIA_S178_L001_R2_001.fastq (files 46 of 70)	<<<<<
+Making contigs...
+Done.
+
+It took 1 secs to assemble 873 reads.
+
+
+>>>>>	Processing file pair 390_SD_MB_S194_L001_R1_001.fastq - 390_SD_MB_S194_L001_R2_001.fastq (files 47 of 70)	<<<<<
+Making contigs...
+Done.
+
+It took 28 secs to assemble 29511 reads.
+
+
+>>>>>	Processing file pair 390_SD_QIA_S147_L001_R1_001.fastq - 390_SD_QIA_S147_L001_R2_001.fastq (files 48 of 70)	<<<<<
+Making contigs...
+Done.
+
+It took 48 secs to assemble 51833 reads.
+
+
+>>>>>	Processing file pair 52_D1_MB_S156_L001_R1_001.fastq - 52_D1_MB_S156_L001_R2_001.fastq (files 49 of 70)	<<<<<
+Making contigs...
+Done.
+
+It took 39 secs to assemble 42364 reads.
+
+
+>>>>>	Processing file pair 52_D1_QIA_S151_L001_R1_001.fastq - 52_D1_QIA_S151_L001_R2_001.fastq (files 50 of 70)	<<<<<
+Making contigs...
+Done.
+
+It took 61 secs to assemble 65385 reads.
+
+
+>>>>>	Processing file pair 52_D2_MB_S148_L001_R1_001.fastq - 52_D2_MB_S148_L001_R2_001.fastq (files 51 of 70)	<<<<<
+Making contigs...
+Done.
+
+It took 52 secs to assemble 55649 reads.
+
+
+>>>>>	Processing file pair 52_D2_QIA_S188_L001_R1_001.fastq - 52_D2_QIA_S188_L001_R2_001.fastq (files 52 of 70)	<<<<<
+Making contigs...
+Done.
+
+It took 30 secs to assemble 30819 reads.
+
+
+>>>>>	Processing file pair 52_D3_MB_S183_L001_R1_001.fastq - 52_D3_MB_S183_L001_R2_001.fastq (files 53 of 70)	<<<<<
+Making contigs...
+Done.
+
+It took 11 secs to assemble 11746 reads.
+
+
+>>>>>	Processing file pair 52_D3_QIA_S211_L001_R1_001.fastq - 52_D3_QIA_S211_L001_R2_001.fastq (files 54 of 70)	<<<<<
+Making contigs...
+Done.
+
+It took 11 secs to assemble 12023 reads.
+
+
+>>>>>	Processing file pair 52_D4_MB_S190_L001_R1_001.fastq - 52_D4_MB_S190_L001_R2_001.fastq (files 55 of 70)	<<<<<
+Making contigs...
+Done.
+
+It took 30 secs to assemble 31908 reads.
+
+
+>>>>>	Processing file pair 52_D4_QIA_S219_L001_R1_001.fastq - 52_D4_QIA_S219_L001_R2_001.fastq (files 56 of 70)	<<<<<
+Making contigs...
+Done.
+
+It took 0 secs to assemble 364 reads.
+
+
+>>>>>	Processing file pair 52_D5_MB_S149_L001_R1_001.fastq - 52_D5_MB_S149_L001_R2_001.fastq (files 57 of 70)	<<<<<
+Making contigs...
+Done.
+
+It took 32 secs to assemble 34051 reads.
+
+
+>>>>>	Processing file pair 52_D5_QIA_S166_L001_R1_001.fastq - 52_D5_QIA_S166_L001_R2_001.fastq (files 58 of 70)	<<<<<
+Making contigs...
+Done.
+
+It took 0 secs to assemble 97 reads.
+
+
+>>>>>	Processing file pair 52_SD_MB_S207_L001_R1_001.fastq - 52_SD_MB_S207_L001_R2_001.fastq (files 59 of 70)	<<<<<
+Making contigs...
+Done.
+
+It took 68 secs to assemble 72522 reads.
+
+
+>>>>>	Processing file pair 52_SD_QIA_S202_L001_R1_001.fastq - 52_SD_QIA_S202_L001_R2_001.fastq (files 60 of 70)	<<<<<
+Making contigs...
+Done.
+
+It took 46 secs to assemble 49478 reads.
+
+
+>>>>>	Processing file pair BufferAE_S225_L001_R1_001.fastq - BufferAE_S225_L001_R2_001.fastq (files 61 of 70)	<<<<<
+Making contigs...
+Done.
+
+It took 0 secs to assemble 117 reads.
+
+
+>>>>>	Processing file pair BufferC6_S163_L001_R1_001.fastq - BufferC6_S163_L001_R2_001.fastq (files 62 of 70)	<<<<<
+Making contigs...
+Done.
+
+It took 0 secs to assemble 128 reads.
+
+
+>>>>>	Processing file pair controlkit_Qia_PBS_S158_L001_R1_001.fastq - controlkit_Qia_PBS_S158_L001_R2_001.fastq (files 63 of 70)	<<<<<
+Making contigs...
+Done.
+
+It took 0 secs to assemble 160 reads.
+
+
+>>>>>	Processing file pair controlkitMB_S206_L001_R1_001.fastq - controlkitMB_S206_L001_R2_001.fastq (files 64 of 70)	<<<<<
+Making contigs...
+Done.
+
+It took 0 secs to assemble 95 reads.
+
+
+>>>>>	Processing file pair controlkitMBPBS_S171_L001_R1_001.fastq - controlkitMBPBS_S171_L001_R2_001.fastq (files 65 of 70)	<<<<<
+Making contigs...
+Done.
+
+It took 0 secs to assemble 67 reads.
+
+
+>>>>>	Processing file pair EMPTY_A1_S139_L001_R1_001.fastq - EMPTY_A1_S139_L001_R2_001.fastq (files 66 of 70)	<<<<<
+Making contigs...
+Done.
+
+It took 0 secs to assemble 103 reads.
+
+
+>>>>>	Processing file pair EMPTY_B1_S150_L001_R1_001.fastq - EMPTY_B1_S150_L001_R2_001.fastq (files 67 of 70)	<<<<<
+Making contigs...
+Done.
+
+It took 1 secs to assemble 111 reads.
+
+
+>>>>>	Processing file pair mockB07292016_S215_L001_R1_001.fastq - mockB07292016_S215_L001_R2_001.fastq (files 68 of 70)	<<<<<
+Making contigs...
+Done.
+
+It took 59 secs to assemble 64465 reads.
+
+
+>>>>>	Processing file pair PBS_S198_L001_R1_001.fastq - PBS_S198_L001_R2_001.fastq (files 69 of 70)	<<<<<
+Making contigs...
+Done.
+
+It took 1 secs to assemble 80 reads.
+
+
+>>>>>	Processing file pair waterB07292016_S226_L001_R1_001.fastq - waterB07292016_S226_L001_R2_001.fastq (files 70 of 70)	<<<<<
+Making contigs...
+Done.
+
+It took 0 secs to assemble 145 reads.
+
+It took 1876 secs to process 2008950 sequences.
+
+Group count: 
+120_D1_MB	82505
+120_D1_QIA	36284
+120_D2_MB	51127
+120_D2_QIA	42090
+120_D3_MB	57325
+120_D3_QIA	1760
+120_D4_MB	29976
+120_D4_QIA	2251
+120_D5_MB	19404
+120_D5_QIA	165
+120_SD_MB	35306
+120_SD_QIA	52141
+226_D1_MB	49332
+226_D1_QIA	51223
+226_D2_MB	39955
+226_D2_QIA	43122
+226_D3_MB	619
+226_D3_QIA	130
+226_D4_MB	970
+226_D4_QIA	307
+226_D5_MB	34697
+226_D5_QIA	88
+226_SD_MB	42534
+226_SD_QIA	53877
+294_D1_MB	54707
+294_D1_QIA	37141
+294_D2_MB	41596
+294_D2_QIA	29964
+294_D3_MB	63219
+294_D3_QIA	5820
+294_D4_MB	64400
+294_D4_QIA	228
+294_D5_MB	28799
+294_D5_QIA	227
+294_SD_MB	16604
+294_SD_QIA	59146
+390_D1_MB	60366
+390_D1_QIA	18238
+390_D2_MB	18232
+390_D2_QIA	86061
+390_D3_MB	52388
+390_D3_QIA	35181
+390_D4_MB	13885
+390_D4_QIA	4144
+390_D5_MB	37322
+390_D5_QIA	873
+390_SD_MB	29511
+390_SD_QIA	51833
+52_D1_MB	42364
+52_D1_QIA	65385
+52_D2_MB	55649
+52_D2_QIA	30819
+52_D3_MB	11746
+52_D3_QIA	12023
+52_D4_MB	31908
+52_D4_QIA	364
+52_D5_MB	34051
+52_D5_QIA	97
+52_SD_MB	72522
+52_SD_QIA	49478
+BufferAE	117
+BufferC6	128
+EMPTY_A1	103
+EMPTY_B1	111
+PBS	80
+controlkitMB	95
+controlkitMBPBS	67
+controlkit_Qia_PBS	160
+mockB07292016	64465
+waterB07292016	145
+
+Total of all groups is 2008950
+
+Output File Names: 
+stability.trim.contigs.fasta
+stability.trim.contigs.qual
+stability.contigs.report
+stability.scrap.contigs.fasta
+stability.scrap.contigs.qual
+stability.contigs.groups
+
+[WARNING]: your sequence names contained ':'.  I changed them to '_' to avoid problems in your downstream analysis.
+
+mothur > summary.seqs(fasta=stability.trim.contigs.fasta)
+
+Using 1 processors.
+
+		Start	End	NBases	Ambigs	Polymer	NumSeqs
+Minimum:	1	81	81	0	3	1
+2.5%-tile:	1	252	252	0	4	50224
+25%-tile:	1	253	253	0	4	502238
+Median: 	1	253	253	0	5	1004476
+75%-tile:	1	253	253	0	5	1506713
+97.5%-tile:	1	253	253	7	6	1958727
+Maximum:	1	502	502	306	250	2008950
+Mean:	1	253.069	253.069	0.715999	4.7577
+# of Seqs:	2008950
+
+Output File Names: 
+stability.trim.contigs.summary
+
+It took 24 secs to summarize 2008950 sequences.
+
+mothur > screen.seqs(fasta=stability.trim.contigs.fasta, group=stability.contigs.groups, summary=stability.trim.contigs.summary, maxambig=0, maxlength=275)
+
+Using 1 processors.
+
+Output File Names: 
+stability.trim.contigs.good.summary
+stability.trim.contigs.good.fasta
+stability.trim.contigs.bad.accnos
+stability.contigs.good.groups
+
+
+It took 29 secs to screen 2008950 sequences.
+
+mothur > unique.seqs(fasta=stability.trim.contigs.good.fasta)
+1704820	127429
+
+Output File Names: 
+stability.trim.contigs.good.names
+stability.trim.contigs.good.unique.fasta
+
+
+mothur > count.seqs(name=stability.trim.contigs.good.names, group=stability.contigs.good.groups)
+
+Using 1 processors.
+It took 10 secs to create a table for 1704820 sequences.
+
+
+Total number of sequences: 1704820
+
+Output File Names: 
+stability.trim.contigs.good.count_table
+
+
+mothur > summary.seqs(count=stability.trim.contigs.good.count_table)
+Using stability.trim.contigs.good.unique.fasta as input file for the fasta parameter.
+
+Using 1 processors.
+
+		Start	End	NBases	Ambigs	Polymer	NumSeqs
+Minimum:	1	250	250	0	3	1
+2.5%-tile:	1	252	252	0	4	42621
+25%-tile:	1	253	253	0	4	426206
+Median: 	1	253	253	0	5	852411
+75%-tile:	1	253	253	0	5	1278616
+97.5%-tile:	1	253	253	0	6	1662200
+Maximum:	1	273	273	0	10	1704820
+Mean:	1	252.891	252.891	0	4.65258
+# of unique seqs:	127429
+total # of seqs:	1704820
+
+Output File Names: 
+stability.trim.contigs.good.unique.summary
+
+It took 2 secs to summarize 1704820 sequences.
+
+mothur > pcr.seqs(fasta=silva.seed_v123.align,start=11894,end=25319,keepdots=F)
+
+Using 1 processors.
+
+Output File Names: 
+silva.seed_v123.pcr.align
+
+
+It took 19 secs to screen 14914 sequences.
+
+mothur > system(mv silva.seed_v123.pcr.align silva.v4.fasta)
+
+
+mothur > align.seqs(fasta=stability.trim.contigs.good.unique.fasta, reference=silva.v4.fasta)
+
+Using 1 processors.
+
+Reading in the silva.v4.fasta template sequences...	DONE.
+It took 5 to read  14914 sequences.
+Aligning sequences from stability.trim.contigs.good.unique.fasta ...
+It took 298 secs to align 127429 sequences.
+
+
+Output File Names: 
+stability.trim.contigs.good.unique.align
+stability.trim.contigs.good.unique.align.report
+
+
+mothur > summary.seqs(fasta=stability.trim.contigs.good.unique.align, count=stability.trim.contigs.good.count_table)
+
+Using 1 processors.
+
+		Start	End	NBases	Ambigs	Polymer	NumSeqs
+Minimum:	1	10693	250	0	3	1
+2.5%-tile:	1968	11550	252	0	4	42621
+25%-tile:	1968	11550	253	0	4	426206
+Median: 	1968	11550	253	0	5	852411
+75%-tile:	1968	11550	253	0	5	1278616
+97.5%-tile:	1968	11550	253	0	6	1662200
+Maximum:	1982	13383	268	0	10	1704820
+Mean:	1968	11550	252.891	0	4.65258
+# of unique seqs:	127429
+total # of seqs:	1704820
+
+Output File Names: 
+stability.trim.contigs.good.unique.summary
+
+It took 38 secs to summarize 1704820 sequences.
+
+mothur > screen.seqs(fasta=stability.trim.contigs.good.unique.align, count=stability.trim.contigs.good.count_table, summary=stability.trim.contigs.good.unique.summary, start=1968, end=11550, maxhomop=8)
+
+Using 1 processors.
+
+Output File Names: 
+stability.trim.contigs.good.unique.good.summary
+stability.trim.contigs.good.unique.good.align
+stability.trim.contigs.good.unique.bad.accnos
+stability.trim.contigs.good.good.count_table
+
+
+It took 44 secs to screen 127429 sequences.
+
+mothur > summary.seqs(fasta=current, count=current)
+Using stability.trim.contigs.good.good.count_table as input file for the count parameter.
+Using stability.trim.contigs.good.unique.good.align as input file for the fasta parameter.
+
+Using 1 processors.
+
+		Start	End	NBases	Ambigs	Polymer	NumSeqs
+Minimum:	1964	11550	250	0	3	1
+2.5%-tile:	1968	11550	252	0	4	42395
+25%-tile:	1968	11550	253	0	4	423947
+Median: 	1968	11550	253	0	5	847893
+75%-tile:	1968	11550	253	0	5	1271839
+97.5%-tile:	1968	11550	253	0	6	1653391
+Maximum:	1968	12070	264	0	8	1695785
+Mean:	1968	11550	252.896	0	4.65527
+# of unique seqs:	126047
+total # of seqs:	1695785
+
+Output File Names: 
+stability.trim.contigs.good.unique.good.summary
+
+It took 37 secs to summarize 1695785 sequences.
+
+mothur > filter.seqs(fasta=stability.trim.contigs.good.unique.good.align, vertical=T, trump=.)
+
+Using 1 processors.
+Creating Filter... 
+
+
+Running Filter... 
+
+
+
+Length of filtered alignment: 477
+Number of columns removed: 12948
+Length of the original alignment: 13425
+Number of sequences used to construct filter: 126047
+
+Output File Names: 
+stability.filter
+stability.trim.contigs.good.unique.good.filter.fasta
+
+
+mothur > unique.seqs(fasta=stability.trim.contigs.good.unique.good.filter.fasta, count=stability.trim.contigs.good.good.count_table)
+126047	126020
+
+Output File Names: 
+stability.trim.contigs.good.unique.good.filter.count_table
+stability.trim.contigs.good.unique.good.filter.unique.fasta
+
+
+mothur > pre.cluster(fasta=stability.trim.contigs.good.unique.good.filter.unique.fasta, count=stability.trim.contigs.good.unique.good.filter.count_table, diffs=2)
+
+Using 1 processors.
+
+Processing group 120_D1_MB:
+11431	2167	9264
+Total number of sequences before pre.cluster was 11431.
+pre.cluster removed 9264 sequences.
+
+It took 2 secs to cluster 11431 sequences.
+
+Processing group 120_D1_QIA:
+4251	657	3594
+Total number of sequences before pre.cluster was 4251.
+pre.cluster removed 3594 sequences.
+
+It took 0 secs to cluster 4251 sequences.
+
+Processing group 120_D2_MB:
+7599	1160	6439
+Total number of sequences before pre.cluster was 7599.
+pre.cluster removed 6439 sequences.
+
+It took 0 secs to cluster 7599 sequences.
+
+Processing group 120_D2_QIA:
+3315	484	2831
+Total number of sequences before pre.cluster was 3315.
+pre.cluster removed 2831 sequences.
+
+It took 1 secs to cluster 3315 sequences.
+
+Processing group 120_D3_MB:
+6365	593	5772
+Total number of sequences before pre.cluster was 6365.
+pre.cluster removed 5772 sequences.
+
+It took 0 secs to cluster 6365 sequences.
+
+Processing group 120_D3_QIA:
+308	98	210
+Total number of sequences before pre.cluster was 308.
+pre.cluster removed 210 sequences.
+
+It took 0 secs to cluster 308 sequences.
+
+Processing group 120_D4_MB:
+3624	314	3310
+Total number of sequences before pre.cluster was 3624.
+pre.cluster removed 3310 sequences.
+
+It took 0 secs to cluster 3624 sequences.
+
+Processing group 120_D4_QIA:
+266	114	152
+Total number of sequences before pre.cluster was 266.
+pre.cluster removed 152 sequences.
+
+It took 0 secs to cluster 266 sequences.
+
+Processing group 120_D5_MB:
+1688	229	1459
+Total number of sequences before pre.cluster was 1688.
+pre.cluster removed 1459 sequences.
+
+It took 0 secs to cluster 1688 sequences.
+
+Processing group 120_D5_QIA:
+37	29	8
+Total number of sequences before pre.cluster was 37.
+pre.cluster removed 8 sequences.
+
+It took 0 secs to cluster 37 sequences.
+
+Processing group 120_SD_MB:
+5583	1368	4215
+Total number of sequences before pre.cluster was 5583.
+pre.cluster removed 4215 sequences.
+
+It took 1 secs to cluster 5583 sequences.
+
+Processing group 120_SD_QIA:
+6803	1044	5759
+Total number of sequences before pre.cluster was 6803.
+pre.cluster removed 5759 sequences.
+
+It took 0 secs to cluster 6803 sequences.
+
+Processing group 226_D1_MB:
+7153	1260	5893
+Total number of sequences before pre.cluster was 7153.
+pre.cluster removed 5893 sequences.
+
+It took 0 secs to cluster 7153 sequences.
+
+Processing group 226_D1_QIA:
+4959	477	4482
+Total number of sequences before pre.cluster was 4959.
+pre.cluster removed 4482 sequences.
+
+It took 1 secs to cluster 4959 sequences.
+
+Processing group 226_D2_MB:
+4801	482	4319
+Total number of sequences before pre.cluster was 4801.
+pre.cluster removed 4319 sequences.
+
+It took 0 secs to cluster 4801 sequences.
+
+Processing group 226_D2_QIA:
+2229	251	1978
+Total number of sequences before pre.cluster was 2229.
+pre.cluster removed 1978 sequences.
+
+It took 0 secs to cluster 2229 sequences.
+
+Processing group 226_D3_MB:
+138	52	86
+Total number of sequences before pre.cluster was 138.
+pre.cluster removed 86 sequences.
+
+It took 0 secs to cluster 138 sequences.
+
+Processing group 226_D3_QIA:
+33	28	5
+Total number of sequences before pre.cluster was 33.
+pre.cluster removed 5 sequences.
+
+It took 0 secs to cluster 33 sequences.
+
+Processing group 226_D4_MB:
+154	64	90
+Total number of sequences before pre.cluster was 154.
+pre.cluster removed 90 sequences.
+
+It took 0 secs to cluster 154 sequences.
+
+Processing group 226_D4_QIA:
+67	32	35
+Total number of sequences before pre.cluster was 67.
+pre.cluster removed 35 sequences.
+
+It took 0 secs to cluster 67 sequences.
+
+Processing group 226_D5_MB:
+Total number of sequences before pre.cluster was 3100.
+pre.cluster removed 2780 sequences.
+
+It took 0 secs to cluster 3100 sequences.
+
+Processing group 226_D5_QIA:
+26	21	5
+Total number of sequences before pre.cluster was 26.
+pre.cluster removed 5 sequences.
+
+It took 0 secs to cluster 26 sequences.
+
+Processing group 226_SD_MB:
+5987	1316	4671
+Total number of sequences before pre.cluster was 5987.
+pre.cluster removed 4671 sequences.
+
+It took 0 secs to cluster 5987 sequences.
+
+Processing group 226_SD_QIA:
+6516	835	5681
+Total number of sequences before pre.cluster was 6516.
+pre.cluster removed 5681 sequences.
+
+It took 1 secs to cluster 6516 sequences.
+
+Processing group 294_D1_MB:
+8214	1784	6430
+Total number of sequences before pre.cluster was 8214.
+pre.cluster removed 6430 sequences.
+
+It took 1 secs to cluster 8214 sequences.
+
+Processing group 294_D1_QIA:
+5644	837	4807
+Total number of sequences before pre.cluster was 5644.
+pre.cluster removed 4807 sequences.
+
+It took 0 secs to cluster 5644 sequences.
+
+Processing group 294_D2_MB:
+5742	720	5022
+Total number of sequences before pre.cluster was 5742.
+pre.cluster removed 5022 sequences.
+
+It took 0 secs to cluster 5742 sequences.
+
+Processing group 294_D2_QIA:
+3915	424	3491
+Total number of sequences before pre.cluster was 3915.
+pre.cluster removed 3491 sequences.
+
+It took 0 secs to cluster 3915 sequences.
+
+Processing group 294_D3_MB:
+5811	836	4975
+Total number of sequences before pre.cluster was 5811.
+pre.cluster removed 4975 sequences.
+
+It took 1 secs to cluster 5811 sequences.
+
+Processing group 294_D3_QIA:
+626	183	443
+Total number of sequences before pre.cluster was 626.
+pre.cluster removed 443 sequences.
+
+It took 0 secs to cluster 626 sequences.
+
+Processing group 294_D4_MB:
+5283	565	4718
+Total number of sequences before pre.cluster was 5283.
+pre.cluster removed 4718 sequences.
+
+It took 0 secs to cluster 5283 sequences.
+
+Processing group 294_D4_QIA:
+56	35	21
+Total number of sequences before pre.cluster was 56.
+pre.cluster removed 21 sequences.
+
+It took 0 secs to cluster 56 sequences.
+
+Processing group 294_D5_MB:
+2255	274	1981
+Total number of sequences before pre.cluster was 2255.
+pre.cluster removed 1981 sequences.
+
+It took 0 secs to cluster 2255 sequences.
+
+Processing group 294_D5_QIA:
+58	28	30
+Total number of sequences before pre.cluster was 58.
+pre.cluster removed 30 sequences.
+
+It took 0 secs to cluster 58 sequences.
+
+Processing group 294_SD_MB:
+3165	977	2188
+Total number of sequences before pre.cluster was 3165.
+pre.cluster removed 2188 sequences.
+
+It took 0 secs to cluster 3165 sequences.
+
+Processing group 294_SD_QIA:
+8460	1473	6987
+Total number of sequences before pre.cluster was 8460.
+pre.cluster removed 6987 sequences.
+
+It took 1 secs to cluster 8460 sequences.
+
+Processing group 390_D1_MB:
+9505	2202	7303
+Total number of sequences before pre.cluster was 9505.
+pre.cluster removed 7303 sequences.
+
+It took 1 secs to cluster 9505 sequences.
+
+Processing group 390_D1_QIA:
+2391	493	1898
+Total number of sequences before pre.cluster was 2391.
+pre.cluster removed 1898 sequences.
+
+It took 0 secs to cluster 2391 sequences.
+
+Processing group 390_D2_MB:
+2916	577	2339
+Total number of sequences before pre.cluster was 2916.
+pre.cluster removed 2339 sequences.
+
+It took 0 secs to cluster 2916 sequences.
+
+Processing group 390_D2_QIA:
+7158	712	6446
+Total number of sequences before pre.cluster was 7158.
+pre.cluster removed 6446 sequences.
+
+It took 1 secs to cluster 7158 sequences.
+
+Processing group 390_D3_MB:
+5601	500	5101
+Total number of sequences before pre.cluster was 5601.
+pre.cluster removed 5101 sequences.
+
+It took 0 secs to cluster 5601 sequences.
+
+Processing group 390_D3_QIA:
+2151	268	1883
+Total number of sequences before pre.cluster was 2151.
+pre.cluster removed 1883 sequences.
+
+It took 0 secs to cluster 2151 sequences.
+
+Processing group 390_D4_MB:
+1944	235	1709
+Total number of sequences before pre.cluster was 1944.
+pre.cluster removed 1709 sequences.
+
+It took 0 secs to cluster 1944 sequences.
+
+Processing group 390_D4_QIA:
+428	126	302
+Total number of sequences before pre.cluster was 428.
+pre.cluster removed 302 sequences.
+
+It took 0 secs to cluster 428 sequences.
+
+Processing group 390_D5_MB:
+3123	485	2638
+Total number of sequences before pre.cluster was 3123.
+pre.cluster removed 2638 sequences.
+
+It took 0 secs to cluster 3123 sequences.
+
+Processing group 390_D5_QIA:
+133	66	67
+Total number of sequences before pre.cluster was 133.
+pre.cluster removed 67 sequences.
+
+It took 0 secs to cluster 133 sequences.
+
+Processing group 390_SD_MB:
+4937	1354	3583
+Total number of sequences before pre.cluster was 4937.
+pre.cluster removed 3583 sequences.
+
+It took 1 secs to cluster 4937 sequences.
+
+Processing group 390_SD_QIA:
+6728	1351	5377
+Total number of sequences before pre.cluster was 6728.
+pre.cluster removed 5377 sequences.
+
+It took 1 secs to cluster 6728 sequences.
+
+Processing group 52_D1_MB:
+6657	1438	5219
+Total number of sequences before pre.cluster was 6657.
+pre.cluster removed 5219 sequences.
+
+It took 0 secs to cluster 6657 sequences.
+
+Processing group 52_D1_QIA:
+6780	718	6062
+Total number of sequences before pre.cluster was 6780.
+pre.cluster removed 6062 sequences.
+
+It took 0 secs to cluster 6780 sequences.
+
+Processing group 52_D2_MB:
+7146	870	6276
+Total number of sequences before pre.cluster was 7146.
+pre.cluster removed 6276 sequences.
+
+It took 1 secs to cluster 7146 sequences.
+
+Processing group 52_D2_QIA:
+3533	348	3185
+Total number of sequences before pre.cluster was 3533.
+pre.cluster removed 3185 sequences.
+
+It took 0 secs to cluster 3533 sequences.
+
+Processing group 52_D3_MB:
+1645	188	1457
+Total number of sequences before pre.cluster was 1645.
+pre.cluster removed 1457 sequences.
+
+It took 0 secs to cluster 1645 sequences.
+
+Processing group 52_D3_QIA:
+1057	187	870
+Total number of sequences before pre.cluster was 1057.
+pre.cluster removed 870 sequences.
+
+It took 0 secs to cluster 1057 sequences.
+
+Processing group 52_D4_MB:
+2857	436	2421
+Total number of sequences before pre.cluster was 2857.
+pre.cluster removed 2421 sequences.
+
+It took 0 secs to cluster 2857 sequences.
+
+Processing group 52_D4_QIA:
+69	39	30
+Total number of sequences before pre.cluster was 69.
+pre.cluster removed 30 sequences.
+
+It took 0 secs to cluster 69 sequences.
+
+Processing group 52_D5_MB:
+2962	347	2615
+Total number of sequences before pre.cluster was 2962.
+pre.cluster removed 2615 sequences.
+
+It took 0 secs to cluster 2962 sequences.
+
+Processing group 52_D5_QIA:
+23	20	3
+Total number of sequences before pre.cluster was 23.
+pre.cluster removed 3 sequences.
+
+It took 0 secs to cluster 23 sequences.
+
+Processing group 52_SD_MB:
+9907	2230	7677
+Total number of sequences before pre.cluster was 9907.
+pre.cluster removed 7677 sequences.
+
+It took 2 secs to cluster 9907 sequences.
+
+Processing group 52_SD_QIA:
+6953	1124	5829
+Total number of sequences before pre.cluster was 6953.
+pre.cluster removed 5829 sequences.
+
+It took 0 secs to cluster 6953 sequences.
+
+Processing group BufferAE:
+26	24	2
+Total number of sequences before pre.cluster was 26.
+pre.cluster removed 2 sequences.
+
+It took 0 secs to cluster 26 sequences.
+
+Processing group BufferC6:
+23	19	4
+Total number of sequences before pre.cluster was 23.
+pre.cluster removed 4 sequences.
+
+It took 0 secs to cluster 23 sequences.
+
+Processing group EMPTY_A1:
+18	16	2
+Total number of sequences before pre.cluster was 18.
+pre.cluster removed 2 sequences.
+
+It took 0 secs to cluster 18 sequences.
+
+Processing group EMPTY_B1:
+20	19	1
+Total number of sequences before pre.cluster was 20.
+pre.cluster removed 1 sequences.
+
+It took 0 secs to cluster 20 sequences.
+
+Processing group PBS:
+23	21	2
+Total number of sequences before pre.cluster was 23.
+pre.cluster removed 2 sequences.
+
+It took 0 secs to cluster 23 sequences.
+
+Processing group controlkitMB:
+20	17	3
+Total number of sequences before pre.cluster was 20.
+pre.cluster removed 3 sequences.
+
+It took 0 secs to cluster 20 sequences.
+
+Processing group controlkitMBPBS:
+27	25	2
+Total number of sequences before pre.cluster was 27.
+pre.cluster removed 2 sequences.
+
+It took 0 secs to cluster 27 sequences.
+
+Processing group controlkit_Qia_PBS:
+28	25	3
+Total number of sequences before pre.cluster was 28.
+pre.cluster removed 3 sequences.
+
+It took 0 secs to cluster 28 sequences.
+
+Processing group mockB07292016:
+5037	442	4595
+Total number of sequences before pre.cluster was 5037.
+pre.cluster removed 4595 sequences.
+
+It took 0 secs to cluster 5037 sequences.
+
+Processing group waterB07292016:
+31	25	6
+Total number of sequences before pre.cluster was 31.
+pre.cluster removed 6 sequences.
+
+It took 0 secs to cluster 31 sequences.
+It took 22 secs to run pre.cluster.
+
+Output File Names: 
+stability.trim.contigs.good.unique.good.filter.unique.precluster.fasta
+stability.trim.contigs.good.unique.good.filter.unique.precluster.count_table
+stability.trim.contigs.good.unique.good.filter.unique.precluster.120_D1_MB.map
+stability.trim.contigs.good.unique.good.filter.unique.precluster.120_D1_QIA.map
+stability.trim.contigs.good.unique.good.filter.unique.precluster.120_D2_MB.map
+stability.trim.contigs.good.unique.good.filter.unique.precluster.120_D2_QIA.map
+stability.trim.contigs.good.unique.good.filter.unique.precluster.120_D3_MB.map
+stability.trim.contigs.good.unique.good.filter.unique.precluster.120_D3_QIA.map
+stability.trim.contigs.good.unique.good.filter.unique.precluster.120_D4_MB.map
+stability.trim.contigs.good.unique.good.filter.unique.precluster.120_D4_QIA.map
+stability.trim.contigs.good.unique.good.filter.unique.precluster.120_D5_MB.map
+stability.trim.contigs.good.unique.good.filter.unique.precluster.120_D5_QIA.map
+stability.trim.contigs.good.unique.good.filter.unique.precluster.120_SD_MB.map
+stability.trim.contigs.good.unique.good.filter.unique.precluster.120_SD_QIA.map
+stability.trim.contigs.good.unique.good.filter.unique.precluster.226_D1_MB.map
+stability.trim.contigs.good.unique.good.filter.unique.precluster.226_D1_QIA.map
+stability.trim.contigs.good.unique.good.filter.unique.precluster.226_D2_MB.map
+stability.trim.contigs.good.unique.good.filter.unique.precluster.226_D2_QIA.map
+stability.trim.contigs.good.unique.good.filter.unique.precluster.226_D3_MB.map
+stability.trim.contigs.good.unique.good.filter.unique.precluster.226_D3_QIA.map
+stability.trim.contigs.good.unique.good.filter.unique.precluster.226_D4_MB.map
+stability.trim.contigs.good.unique.good.filter.unique.precluster.226_D4_QIA.map
+stability.trim.contigs.good.unique.good.filter.unique.precluster.226_D5_MB.map
+stability.trim.contigs.good.unique.good.filter.unique.precluster.226_D5_QIA.map
+stability.trim.contigs.good.unique.good.filter.unique.precluster.226_SD_MB.map
+stability.trim.contigs.good.unique.good.filter.unique.precluster.226_SD_QIA.map
+stability.trim.contigs.good.unique.good.filter.unique.precluster.294_D1_MB.map
+stability.trim.contigs.good.unique.good.filter.unique.precluster.294_D1_QIA.map
+stability.trim.contigs.good.unique.good.filter.unique.precluster.294_D2_MB.map
+stability.trim.contigs.good.unique.good.filter.unique.precluster.294_D2_QIA.map
+stability.trim.contigs.good.unique.good.filter.unique.precluster.294_D3_MB.map
+stability.trim.contigs.good.unique.good.filter.unique.precluster.294_D3_QIA.map
+stability.trim.contigs.good.unique.good.filter.unique.precluster.294_D4_MB.map
+stability.trim.contigs.good.unique.good.filter.unique.precluster.294_D4_QIA.map
+stability.trim.contigs.good.unique.good.filter.unique.precluster.294_D5_MB.map
+stability.trim.contigs.good.unique.good.filter.unique.precluster.294_D5_QIA.map
+stability.trim.contigs.good.unique.good.filter.unique.precluster.294_SD_MB.map
+stability.trim.contigs.good.unique.good.filter.unique.precluster.294_SD_QIA.map
+stability.trim.contigs.good.unique.good.filter.unique.precluster.390_D1_MB.map
+stability.trim.contigs.good.unique.good.filter.unique.precluster.390_D1_QIA.map
+stability.trim.contigs.good.unique.good.filter.unique.precluster.390_D2_MB.map
+stability.trim.contigs.good.unique.good.filter.unique.precluster.390_D2_QIA.map
+stability.trim.contigs.good.unique.good.filter.unique.precluster.390_D3_MB.map
+stability.trim.contigs.good.unique.good.filter.unique.precluster.390_D3_QIA.map
+stability.trim.contigs.good.unique.good.filter.unique.precluster.390_D4_MB.map
+stability.trim.contigs.good.unique.good.filter.unique.precluster.390_D4_QIA.map
+stability.trim.contigs.good.unique.good.filter.unique.precluster.390_D5_MB.map
+stability.trim.contigs.good.unique.good.filter.unique.precluster.390_D5_QIA.map
+stability.trim.contigs.good.unique.good.filter.unique.precluster.390_SD_MB.map
+stability.trim.contigs.good.unique.good.filter.unique.precluster.390_SD_QIA.map
+stability.trim.contigs.good.unique.good.filter.unique.precluster.52_D1_MB.map
+stability.trim.contigs.good.unique.good.filter.unique.precluster.52_D1_QIA.map
+stability.trim.contigs.good.unique.good.filter.unique.precluster.52_D2_MB.map
+stability.trim.contigs.good.unique.good.filter.unique.precluster.52_D2_QIA.map
+stability.trim.contigs.good.unique.good.filter.unique.precluster.52_D3_MB.map
+stability.trim.contigs.good.unique.good.filter.unique.precluster.52_D3_QIA.map
+stability.trim.contigs.good.unique.good.filter.unique.precluster.52_D4_MB.map
+stability.trim.contigs.good.unique.good.filter.unique.precluster.52_D4_QIA.map
+stability.trim.contigs.good.unique.good.filter.unique.precluster.52_D5_MB.map
+stability.trim.contigs.good.unique.good.filter.unique.precluster.52_D5_QIA.map
+stability.trim.contigs.good.unique.good.filter.unique.precluster.52_SD_MB.map
+stability.trim.contigs.good.unique.good.filter.unique.precluster.52_SD_QIA.map
+stability.trim.contigs.good.unique.good.filter.unique.precluster.BufferAE.map
+stability.trim.contigs.good.unique.good.filter.unique.precluster.BufferC6.map
+stability.trim.contigs.good.unique.good.filter.unique.precluster.EMPTY_A1.map
+stability.trim.contigs.good.unique.good.filter.unique.precluster.EMPTY_B1.map
+stability.trim.contigs.good.unique.good.filter.unique.precluster.PBS.map
+stability.trim.contigs.good.unique.good.filter.unique.precluster.controlkitMB.map
+stability.trim.contigs.good.unique.good.filter.unique.precluster.controlkitMBPBS.map
+stability.trim.contigs.good.unique.good.filter.unique.precluster.controlkit_Qia_PBS.map
+stability.trim.contigs.good.unique.good.filter.unique.precluster.mockB07292016.map
+stability.trim.contigs.good.unique.good.filter.unique.precluster.waterB07292016.map
+
+
+mothur > chimera.uchime(fasta=stability.trim.contigs.good.unique.good.filter.unique.precluster.fasta, count=stability.trim.contigs.good.unique.good.filter.unique.precluster.count_table, dereplicate=t)
+
+Using 1 processors.
+/share/apps/mothur/1.39.0/intel/2017_update-1/bin/mothuruchime file does not exist. Checking path... 
+Found uchime in your path, using /share/apps/mothur/1.39.0/intel/2017_update-1/bin/uchime
+
+uchime by Robert C. Edgar
+http://drive5.com/uchime
+This code is donated to the public domain.
+
+Checking sequences from stability.trim.contigs.good.unique.good.filter.unique.precluster.fasta ...
+
+It took 86 secs to check 2167 sequences from group 120_D1_MB.
+
+It took 10 secs to check 657 sequences from group 120_D1_QIA.
+
+It took 31 secs to check 1160 sequences from group 120_D2_MB.
+
+It took 6 secs to check 484 sequences from group 120_D2_QIA.
+
+It took 12 secs to check 593 sequences from group 120_D3_MB.
+
+It took 1 secs to check 98 sequences from group 120_D3_QIA.
+
+It took 4 secs to check 314 sequences from group 120_D4_MB.
+
+It took 1 secs to check 114 sequences from group 120_D4_QIA.
+
+It took 2 secs to check 229 sequences from group 120_D5_MB.
+
+It took 0 secs to check 29 sequences from group 120_D5_QIA.
+
+It took 35 secs to check 1368 sequences from group 120_SD_MB.
+
+It took 22 secs to check 1044 sequences from group 120_SD_QIA.
+
+It took 40 secs to check 1260 sequences from group 226_D1_MB.
+
+It took 7 secs to check 477 sequences from group 226_D1_QIA.
+
+It took 9 secs to check 482 sequences from group 226_D2_MB.
+
+It took 2 secs to check 251 sequences from group 226_D2_QIA.
+
+It took 1 secs to check 52 sequences from group 226_D3_MB.
+
+It took 0 secs to check 28 sequences from group 226_D3_QIA.
+
+It took 0 secs to check 64 sequences from group 226_D4_MB.
+
+It took 0 secs to check 32 sequences from group 226_D4_QIA.
+
+It took 4 secs to check 320 sequences from group 226_D5_MB.
+
+It took 0 secs to check 21 sequences from group 226_D5_QIA.
+
+It took 45 secs to check 1316 sequences from group 226_SD_MB.
+
+It took 17 secs to check 835 sequences from group 226_SD_QIA.
+
+It took 47 secs to check 1784 sequences from group 294_D1_MB.
+
+It took 14 secs to check 837 sequences from group 294_D1_QIA.
+
+It took 12 secs to check 720 sequences from group 294_D2_MB.
+
+It took 5 secs to check 424 sequences from group 294_D2_QIA.
+
+It took 17 secs to check 836 sequences from group 294_D3_MB.
+
+It took 1 secs to check 183 sequences from group 294_D3_QIA.
+
+It took 9 secs to check 565 sequences from group 294_D4_MB.
+
+It took 0 secs to check 35 sequences from group 294_D4_QIA.
+
+It took 3 secs to check 274 sequences from group 294_D5_MB.
+
+It took 0 secs to check 28 sequences from group 294_D5_QIA.
+
+It took 18 secs to check 977 sequences from group 294_SD_MB.
+
+It took 33 secs to check 1473 sequences from group 294_SD_QIA.
+
+It took 74 secs to check 2202 sequences from group 390_D1_MB.
+
+It took 6 secs to check 493 sequences from group 390_D1_QIA.
+
+It took 8 secs to check 577 sequences from group 390_D2_MB.
+
+It took 14 secs to check 712 sequences from group 390_D2_QIA.
+
+It took 8 secs to check 500 sequences from group 390_D3_MB.
+
+It took 2 secs to check 268 sequences from group 390_D3_QIA.
+
+It took 2 secs to check 235 sequences from group 390_D4_MB.
+
+It took 1 secs to check 126 sequences from group 390_D4_QIA.
+
+It took 6 secs to check 485 sequences from group 390_D5_MB.
+
+It took 1 secs to check 66 sequences from group 390_D5_QIA.
+
+It took 31 secs to check 1354 sequences from group 390_SD_MB.
+
+It took 29 secs to check 1351 sequences from group 390_SD_QIA.
+
+It took 39 secs to check 1438 sequences from group 52_D1_MB.
+
+It took 12 secs to check 718 sequences from group 52_D1_QIA.
+
+It took 21 secs to check 870 sequences from group 52_D2_MB.
+
+It took 4 secs to check 348 sequences from group 52_D2_QIA.
+
+It took 2 secs to check 188 sequences from group 52_D3_MB.
+
+It took 1 secs to check 187 sequences from group 52_D3_QIA.
+
+It took 7 secs to check 436 sequences from group 52_D4_MB.
+
+It took 0 secs to check 39 sequences from group 52_D4_QIA.
+
+It took 5 secs to check 347 sequences from group 52_D5_MB.
+
+It took 0 secs to check 20 sequences from group 52_D5_QIA.
+
+It took 88 secs to check 2230 sequences from group 52_SD_MB.
+
+It took 23 secs to check 1124 sequences from group 52_SD_QIA.
+
+It took 0 secs to check 24 sequences from group BufferAE.
+
+It took 0 secs to check 19 sequences from group BufferC6.
+
+It took 0 secs to check 16 sequences from group EMPTY_A1.
+
+It took 0 secs to check 19 sequences from group EMPTY_B1.
+
+It took 0 secs to check 21 sequences from group PBS.
+
+It took 0 secs to check 17 sequences from group controlkitMB.
+
+It took 0 secs to check 25 sequences from group controlkitMBPBS.
+
+It took 0 secs to check 25 sequences from group controlkit_Qia_PBS.
+
+It took 8 secs to check 442 sequences from group mockB07292016.
+
+It took 0 secs to check 25 sequences from group waterB07292016.
+
+Output File Names: 
+stability.trim.contigs.good.unique.good.filter.unique.precluster.denovo.uchime.pick.count_table
+stability.trim.contigs.good.unique.good.filter.unique.precluster.denovo.uchime.chimeras
+stability.trim.contigs.good.unique.good.filter.unique.precluster.denovo.uchime.accnos
+
+
+mothur > remove.seqs(fasta=stability.trim.contigs.good.unique.good.filter.unique.precluster.fasta, accnos=stability.trim.contigs.good.unique.good.filter.unique.precluster.denovo.uchime.accnos)
+[WARNING]: This command can take a namefile and you did not provide one. The current namefile is stability.trim.contigs.good.names which seems to match stability.trim.contigs.good.unique.good.filter.unique.precluster.fasta.
+Removed 10554 sequences from your fasta file.
+
+Output File Names: 
+stability.trim.contigs.good.unique.good.filter.unique.precluster.pick.fasta
+
+
+mothur > classify.seqs(fasta=stability.trim.contigs.good.unique.good.filter.unique.precluster.pick.fasta, count=stability.trim.contigs.good.unique.good.filter.unique.precluster.denovo.uchime.pick.count_table, reference=gg_13_8_99.fasta, taxonomy=gg_13_8_99.gg.tax, cutoff=80)
+
+Using 1 processors.
+Generating search database...    DONE.
+It took 112 seconds generate search database. 
+
+Reading in the gg_13_8_99.gg.tax taxonomy...	DONE.
+Calculating template taxonomy tree...     DONE.
+Calculating template probabilities...     DONE.
+It took 337 seconds get probabilities. 
+Classifying sequences from stability.trim.contigs.good.unique.good.filter.unique.precluster.pick.fasta ...
+
+It took 284 secs to classify 14868 sequences.
+
+
+It took 1 secs to create the summary file for 14868 sequences.
+
+
+Output File Names: 
+stability.trim.contigs.good.unique.good.filter.unique.precluster.pick.gg.wang.taxonomy
+stability.trim.contigs.good.unique.good.filter.unique.precluster.pick.gg.wang.tax.summary
+
+
+mothur > remove.lineage(fasta=stability.trim.contigs.good.unique.good.filter.unique.precluster.pick.fasta, count=stability.trim.contigs.good.unique.good.filter.unique.precluster.denovo.uchime.pick.count_table, taxonomy=stability.trim.contigs.good.unique.good.filter.unique.precluster.pick.gg.wang.taxonomy, taxon=Mitochondria-unknown-Eukaryota)
+
+[NOTE]: The count file should contain only unique names, so mothur assumes your fasta, list and taxonomy files also contain only uniques.
+
+
+Output File Names: 
+stability.trim.contigs.good.unique.good.filter.unique.precluster.pick.gg.wang.pick.taxonomy
+stability.trim.contigs.good.unique.good.filter.unique.precluster.pick.pick.fasta
+stability.trim.contigs.good.unique.good.filter.unique.precluster.denovo.uchime.pick.pick.count_table
+
+
+mothur > summary.tax(taxonomy=stability.trim.contigs.good.unique.good.filter.unique.precluster.pick.gg.wang.pick.taxonomy, count=stability.trim.contigs.good.unique.good.filter.unique.precluster.denovo.uchime.pick.pick.count_table)
+
+It took 1 secs to create the summary file for 0 sequences.
+
+
+Output File Names: 
+stability.trim.contigs.good.unique.good.filter.unique.precluster.pick.gg.wang.pick.tax.summary
+
+
+mothur > get.groups(count=stability.trim.contigs.good.unique.good.filter.unique.precluster.denovo.uchime.pick.pick.count_table, fasta=stability.trim.contigs.good.unique.good.filter.unique.precluster.pick.pick.fasta, groups=mockB07292016)
+
+[NOTE]: The count file should contain only unique names, so mothur assumes your fasta, list and taxonomy files also contain only uniques.
+
+Selected 313 sequences from your fasta file.
+Selected 52650 sequences from your count file.
+
+Output File names: 
+stability.trim.contigs.good.unique.good.filter.unique.precluster.pick.pick.pick.fasta
+stability.trim.contigs.good.unique.good.filter.unique.precluster.denovo.uchime.pick.pick.pick.count_table
+
+
+mothur > system(mv stability.trim.contigs.good.unique.good.filter.unique.precluster.pick.pick.pick.fasta stability.trim.contigs.good.unique.good.filter.unique.precluster.pick.pick.mock.fasta)
+
+
+mothur > system(mv stability.trim.contigs.good.unique.good.filter.unique.precluster.denovo.uchime.pick.pick.pick.count_table stability.trim.contigs.good.unique.good.filter.unique.precluster.denovo.uchime.pick.pick.mock.count_table)
+
+
+mothur > 
+seq.error(fasta=stability.trim.contigs.good.unique.good.filter.unique.precluster.pick.pick.mock.fasta, count=stability.trim.contigs.good.unique.good.filter.unique.precluster.denovo.uchime.pick.pick.mock.count_table, reference=HMP_MOCK.v4.fasta, aligned=F)
+
+Using 1 processors.
+[WARNING]: This command can take a namefile and you did not provide one. The current namefile is stability.trim.contigs.good.names which seems to match stability.trim.contigs.good.unique.good.filter.unique.precluster.pick.pick.mock.fasta.
+It took 0 to read 115 sequences.
+
+Multiply error rate by 100 to obtain the percent sequencing errors.
+Overall error rate:	0.0234134
+Errors	Sequences
+0	29494
+1	60
+2	86
+3	144
+4	17
+5	2
+6	20
+7	15
+8	1
+9	8171
+10	26
+11	31
+12	88
+13	7902
+14	9
+15	33
+16	6484
+17	11
+18	14
+19	23
+20	6
+21	1
+22	0
+23	0
+24	0
+25	0
+26	2
+27	0
+28	0
+29	0
+30	1
+31	0
+32	0
+33	0
+34	0
+35	0
+36	0
+37	0
+38	2
+39	0
+40	0
+41	1
+42	2
+43	0
+44	0
+45	0
+46	1
+47	0
+48	1
+49	1
+50	0
+51	0
+52	0
+53	1
+It took 30 secs to check 313 sequences.
+
+Output File Names: 
+stability.trim.contigs.good.unique.good.filter.unique.precluster.pick.pick.mock.error.summary
+stability.trim.contigs.good.unique.good.filter.unique.precluster.pick.pick.mock.error.seq
+stability.trim.contigs.good.unique.good.filter.unique.precluster.pick.pick.mock.error.chimera
+stability.trim.contigs.good.unique.good.filter.unique.precluster.pick.pick.mock.error.seq.forward
+stability.trim.contigs.good.unique.good.filter.unique.precluster.pick.pick.mock.error.seq.reverse
+stability.trim.contigs.good.unique.good.filter.unique.precluster.pick.pick.mock.error.count
+stability.trim.contigs.good.unique.good.filter.unique.precluster.pick.pick.mock.error.matrix
+stability.trim.contigs.good.unique.good.filter.unique.precluster.pick.pick.mock.error.ref
+
+
+mothur > dist.seqs(fasta=stability.trim.contigs.good.unique.good.filter.unique.precluster.pick.pick.mock.fasta, cutoff=0.20)
+
+Using 1 processors.
+
+Output File Names: 
+stability.trim.contigs.good.unique.good.filter.unique.precluster.pick.pick.mock.dist
+
+It took 1 seconds to calculate the distances for 313 sequences.
+
+mothur > cluster(column=stability.trim.contigs.good.unique.good.filter.unique.precluster.pick.pick.mock.dist, count=stability.trim.contigs.good.unique.good.filter.unique.precluster.denovo.uchime.pick.pick.mock.count_table, method=average, cutoff=0.20)
+
+Using 1 processors.
+********************#****#****#****#****#****#****#****#****#****#****#
+Reading matrix:     |||||||||||||||||||||||||||||||||||||||||||||||||||
+***********************************************************************
+changed cutoff to 0.158777
+It took 0 seconds to cluster
+
+Output File Names: 
+stability.trim.contigs.good.unique.good.filter.unique.precluster.pick.pick.mock.an.unique_list.list
+
+
+mothur > make.shared(list=stability.trim.contigs.good.unique.good.filter.unique.precluster.pick.pick.mock.an.unique_list.list, count=stability.trim.contigs.good.unique.good.filter.unique.precluster.denovo.uchime.pick.pick.mock.count_table, label=0.03)
+0.03
+
+Output File Names: 
+stability.trim.contigs.good.unique.good.filter.unique.precluster.pick.pick.mock.an.unique_list.shared
+
+
+mothur > rarefaction.single(shared=stability.trim.contigs.good.unique.good.filter.unique.precluster.pick.pick.mock.an.unique_list.shared)
+
+Using 1 processors.
+0.03
+
+Output File Names: 
+stability.trim.contigs.good.unique.good.filter.unique.precluster.pick.pick.mock.an.unique_list.groups.rarefaction
+
+
+mothur > remove.groups(count=stability.trim.contigs.good.unique.good.filter.unique.precluster.denovo.uchime.pick.pick.count_table, fasta=stability.trim.contigs.good.unique.good.filter.unique.precluster.pick.pick.fasta, taxonomy=stability.trim.contigs.good.unique.good.filter.unique.precluster.pick.gg.wang.pick.taxonomy, groups=mockB07292016)
+
+[NOTE]: The count file should contain only unique names, so mothur assumes your fasta, list and taxonomy files also contain only uniques.
+
+Removed 290 sequences from your fasta file.
+Removed 52650 sequences from your count file.
+Removed 290 sequences from your taxonomy file.
+
+Output File names: 
+stability.trim.contigs.good.unique.good.filter.unique.precluster.pick.pick.pick.fasta
+stability.trim.contigs.good.unique.good.filter.unique.precluster.denovo.uchime.pick.pick.pick.count_table
+stability.trim.contigs.good.unique.good.filter.unique.precluster.pick.gg.wang.pick.pick.taxonomy
+
+
+mothur > dist.seqs(fasta=stability.trim.contigs.good.unique.good.filter.unique.precluster.pick.pick.pick.fasta, cutoff=0.20)
+
+Using 1 processors.
+
+Output File Names: 
+stability.trim.contigs.good.unique.good.filter.unique.precluster.pick.pick.pick.dist
+
+It took 514 seconds to calculate the distances for 14578 sequences.
+
+
+mothur > cluster(column=stability.trim.contigs.good.unique.good.filter.unique.precluster.pick.pick.pick.dist, count=stability.trim.contigs.good.unique.good.filter.unique.precluster.denovo.uchime.pick.pick.pick.count_table, method=average, cutoff=0.20)
+
+Using 1 processors.
+********************#****#****#****#****#****#****#****#****#****#****#
+Reading matrix:     |||||||||||||||||||||||||||||||||||||||||||||||||||
+***********************************************************************
+changed cutoff to 0.0829858
+It took 980 seconds to cluster
+
+Output File Names: 
+/home/jsescobar/kitome_proof/stability.trim.contigs.good.unique.good.filter.unique.precluster.pick.pick.pick.an.unique_list.list
+
+
+mothur > make.shared(list=stability.trim.contigs.good.unique.good.filter.unique.precluster.pick.pick.pick.an.unique_list.list, count=stability.trim.contigs.good.unique.good.filter.unique.precluster.denovo.uchime.pick.pick.pick.count_table, label=0.03)
+0.03
+
+Output File Names: 
+/home/jsescobar/kitome_proof/stability.trim.contigs.good.unique.good.filter.unique.precluster.pick.pick.pick.an.unique_list.shared
+
+
+mothur > classify.otu(list=stability.trim.contigs.good.unique.good.filter.unique.precluster.pick.pick.pick.an.unique_list.list, count=stability.trim.contigs.good.unique.good.filter.unique.precluster.denovo.uchime.pick.pick.pick.count_table, taxonomy=stability.trim.contigs.good.unique.good.filter.unique.precluster.pick.gg.wang.pick.pick.taxonomy, label=0.03)
+0.03	1308
+
+Output File Names: 
+/home/jsescobar/kitome_proof/stability.trim.contigs.good.unique.good.filter.unique.precluster.pick.pick.pick.an.unique_list.0.03.cons.taxonomy
+/home/jsescobar/kitome_proof/stability.trim.contigs.good.unique.good.filter.unique.precluster.pick.pick.pick.an.unique_list.0.03.cons.tax.summary
+
+
+mothur > system(cp stability.trim.contigs.good.unique.good.filter.unique.precluster.pick.pick.pick.an.unique_list.shared kitome.an.shared)
+
+
+mothur > system(cp stability.trim.contigs.good.unique.good.filter.unique.precluster.pick.pick.pick.an.unique_list.0.03.cons.taxonomy kitome.an.cons.taxonomy)
+
+
+mothur > system(cp stability.trim.contigs.good.unique.good.filter.unique.precluster.pick.pick.pick.an.unique_list.list kitome.list)
+
+
+mothur > system(cp stability.trim.contigs.good.unique.good.filter.unique.precluster.denovo.uchime.pick.pick.pick.count_table kitome.count_table)
+
+
+mothur > system(cp stability.trim.contigs.good.unique.good.filter.unique.precluster.pick.pick.pick.fasta kitome.fasta)
+
+
+mothur > get.oturep(list=kitome.list, count=kitome.count_table, fasta=kitome.fasta, method=abundance)
+unique	14578
+0.01	9966
+0.02	2091
+0.03	1308
+0.04	967
+0.05	759
+0.06	606
+0.07	487
+0.08	391
+
+Output File Names: 
+/home/jsescobar/kitome_proof/kitome.unique.rep.count_table
+/home/jsescobar/kitome_proof/kitome.0.01.rep.count_table
+/home/jsescobar/kitome_proof/kitome.0.02.rep.count_table
+/home/jsescobar/kitome_proof/kitome.0.03.rep.count_table
+/home/jsescobar/kitome_proof/kitome.0.04.rep.count_table
+/home/jsescobar/kitome_proof/kitome.0.05.rep.count_table
+/home/jsescobar/kitome_proof/kitome.0.06.rep.count_table
+/home/jsescobar/kitome_proof/kitome.0.07.rep.count_table
+/home/jsescobar/kitome_proof/kitome.0.08.rep.count_table
+/home/jsescobar/kitome_proof/kitome.0.01.rep.fasta
+/home/jsescobar/kitome_proof/kitome.0.02.rep.fasta
+/home/jsescobar/kitome_proof/kitome.0.03.rep.fasta
+/home/jsescobar/kitome_proof/kitome.0.04.rep.fasta
+/home/jsescobar/kitome_proof/kitome.0.05.rep.fasta
+/home/jsescobar/kitome_proof/kitome.0.06.rep.fasta
+/home/jsescobar/kitome_proof/kitome.0.07.rep.fasta
+/home/jsescobar/kitome_proof/kitome.0.08.rep.fasta
+/home/jsescobar/kitome_proof/kitome.unique.rep.fasta
+
+
+mothur > dist.seqs(fasta=kitome.0.03.rep.fasta,output=lt)
+
+Using 1 processors.
+
+Output File Names: 
+/home/jsescobar/kitome_proof/kitome.0.03.rep.phylip.dist
+
+It took 4 seconds to calculate the distances for 1308 sequences.
+
+mothur > clearcut(phylip=kitome.0.03.rep.phylip.dist)
+
+Output File Names: 
+/home/jsescobar/kitome_proof/kitome.0.03.rep.phylip.tre
+
+
+mothur > get.groups(shared=kitome.an.shared, accnos=kitome.D0.accnos)
+Selected groups: 120_SD_MB, 120_SD_QIA, 226_SD_MB, 226_SD_QIA, 294_SD_MB, 294_SD_QIA, 390_SD_MB, 390_SD_QIA, 52_SD_MB, 52_SD_QIA from your shared file.
+
+Output File names: 
+/home/jsescobar/kitome_proof/kitome.an.0.03.pick.shared
+
+
+mothur > system(mv kitome.an.0.03.pick.shared kitome.D0.shared)
+
+
+mothur > summary.single(shared=kitome.D0.shared, calc=coverage-sobs-invsimpson-shannon, subsample=13000)
+
+Processing group 120_SD_MB
+
+0.03
+
+Processing group 120_SD_QIA
+
+0.03
+
+Processing group 226_SD_MB
+
+0.03
+
+Processing group 226_SD_QIA
+
+0.03
+
+Processing group 294_SD_MB
+
+0.03
+
+Processing group 294_SD_QIA
+
+0.03
+
+Processing group 390_SD_MB
+
+0.03
+
+Processing group 390_SD_QIA
+
+0.03
+
+Processing group 52_SD_MB
+
+0.03
+
+Processing group 52_SD_QIA
+
+0.03
+
+Output File Names: 
+/home/jsescobar/kitome_proof/kitome.D0.groups.ave-std.summary
+/home/jsescobar/kitome_proof/kitome.D0.groups.summary
+
+
+mothur > quit()

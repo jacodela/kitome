@@ -1,0 +1,338 @@
+# © Juan S. Escobar, 2017
+# Impact of DNA extraction, sample dilution, and reagent contamination on 16S rRNA gene sequencing of human feces
+# Eliana P. Velásquez-Mejía, Jacobo de la Cuesta-Zuluaga & Juan S. Escobar
+# Applied Microbiology and Biotechnology
+# DOI: 10.1007/s00253-017-8583-z
+
+# R libraries ----
+library(reshape2) # melt
+library(ggplot2) # graphs with ggplot
+library(vegan) # ecological indices
+library(GUniFrac) # UniFrac
+library(phytools) # read.newick
+library(cowplot) # plot_grid
+
+# Datasets ----
+
+#setwd(dir = ".../Github/kitome") # change this path as necessary
+
+# Basic datasets
+kitome.otus = read.table(file = "kitome.otus", header = T, sep = "\t", row.names = 1) # OTU table
+kitome.relative.otus = kitome.otus/rowSums(kitome.otus) # OTU relative frequencies
+kitome.meta = read.table(file = "kitome.meta", header = T, sep = "\t", row.names = 1) # metadata
+kitome.rep.tree = read.newick(file = "kitome.0.03.rep.phylip.tre") # NJ tree
+
+# Removing control samples
+# Negative controls are included in all files. For some analyses, it is necessary to remove them.
+controls = c("BufferAE", "BufferC6", "EMPTY_A1", "EMPTY_B1", "PBS", "controlkitMB", "controlkitMBPBS", "controlkit_Qia_PBS", "waterB07292016")
+position_controls = c(61:69)
+
+# Final datasets
+kitome.nc.meta = kitome.meta[-position_controls,] # no controls
+kitome.mb.meta = kitome.meta[kitome.meta$kit=="MB",] # only MoBio
+kitome.qia.meta = kitome.meta[kitome.meta$kit=="QIA",] # only Qiagen
+kitome.nc.otus = kitome.otus[-position_controls,] # no controls
+kitome.nc.relative.otus = kitome.relative.otus[-position_controls,] # no controls
+
+
+# Analysis of the number of reads ----
+D0toD2 <- kitome.nc.meta[which(kitome.nc.meta$dilution=='D0' | kitome.nc.meta$dilution=='D1' | kitome.nc.meta$dilution=='D2'),]
+aggregate(total_reads~kit, FUN="mean", data=D0toD2)
+aggregate(total_reads~kit, FUN="sd", data=D0toD2)
+
+#### Figure 1
+reads1 = ggplot(kitome.mb.meta) +
+  aes(x=factor(dilution), y=total_reads/1000, colour=sample, group=sample) +
+  geom_line() +
+  geom_point() +
+  labs(x = "1:10 dilution", y = "16S rRNA gene reads (x 1000)")
+
+reads2 = ggplot(kitome.qia.meta) +
+  aes(x=factor(dilution), y=total_reads/1000, colour=sample, group=sample) +
+  geom_line() +
+  geom_point() +
+  labs(x = "1:10 dilution", y = "16S rRNA gene reads (x 1000)")
+
+plot_grid(reads1, reads2, ncol=2, nrow=1, labels="AUTO")
+
+# Beta diversity analyses ----
+
+#### Table 1
+# UniFrac (read counts) and Bray-Curtis (relative frequencies)
+unifracs.nc = GUniFrac(kitome.nc.otus, kitome.rep.tree, alpha=c(0, 0.5, 1))$unifracs
+dw.nc = unifracs.nc[, , "d_1"]   # Weighted UniFrac
+du.nc = unifracs.nc[, , "d_UW"]  # Unweighted UniFrac    
+bc.nc.rel = vegdist(kitome.nc.relative.otus, method = "bray", upper = TRUE, diag = TRUE) # Bray-Curtis
+
+# PERMANOVA
+adonis(as.dist(dw.nc)~sample+kit+dilution+sample%in%kit+dilution%in%sample, data=kitome.nc.meta)
+adonis(as.dist(du.nc)~sample+kit+dilution+sample%in%kit+dilution%in%sample, data=kitome.nc.meta)
+adonis(as.dist(bc.nc.rel)~sample+kit+dilution+sample%in%kit+dilution%in%sample, data=kitome.nc.meta)
+
+
+#### Online Resource 3
+# Selecting samples with >10,000 reads/sample
+dat2 = t(kitome.otus)
+ManyReads = apply(dat2,2,sum)
+kitome.otus2 = dat2[,ManyReads>10000]
+kitome.otus2 = t(kitome.otus2)
+kitome.meta2 = kitome.meta[kitome.meta$total_reads>10000,]
+
+unifracs2 = GUniFrac(kitome.otus2, kitome.rep.tree, alpha=c(0, 0.5, 1))$unifracs
+dw2 = unifracs2[, , "d_1"]   # Weighted UniFrac
+du2 = unifracs2[, , "d_UW"]  # Unweighted UniFrac    
+bc2 = vegdist(kitome.otus2, method = "bray", upper = TRUE, diag = TRUE) # Bray-Curtis
+
+adonis(as.dist(dw2)~sample+kit+dilution+sample%in%kit+dilution%in%sample, data=kitome.meta2)
+adonis(as.dist(du2)~sample+kit+dilution+sample%in%kit+dilution%in%sample, data=kitome.meta2)
+adonis(as.dist(bc2)~sample+kit+dilution+sample%in%kit+dilution%in%sample, data=kitome.meta2)
+
+
+#### Figure 2
+unifracs = GUniFrac(kitome.otus, kitome.rep.tree, alpha=c(0, 0.5, 1))$unifracs # conteos absolutos
+dw = unifracs[, , "d_1"]   # Weighted UniFrac
+du = unifracs[, , "d_UW"]  # Unweighted UniFrac    
+bc.rel = vegdist(kitome.relative.otus, method = "bray", upper = TRUE, diag = TRUE)
+
+e.pcoa.dw = cmdscale(as.dist(dw), k=5, eig = T)
+e.PC1.dw = round(e.pcoa.dw$eig[1]/sum(e.pcoa.dw$eig), 4)* 100
+e.PC2.dw = round(e.pcoa.dw$eig[2]/sum(e.pcoa.dw$eig), 4)* 100
+
+e.pcoa.du = cmdscale(as.dist(du), k=5, eig = T)
+e.PC1.du = round(e.pcoa.du$eig[1]/sum(e.pcoa.du$eig), 4)* 100
+e.PC2.du = round(e.pcoa.du$eig[2]/sum(e.pcoa.du$eig), 4)* 100
+
+e.pcoa.bc = cmdscale(as.dist(bc.rel), k=5, eig = T)
+e.PC1.bc = round(e.pcoa.bc$eig[1]/sum(e.pcoa.bc$eig), 4)* 100
+e.PC2.bc = round(e.pcoa.bc$eig[2]/sum(e.pcoa.bc$eig), 4)* 100
+
+pcoa_table = data.frame(PC1.dw = e.pcoa.dw$points[, 1], PC2.dw = e.pcoa.dw$points[, 2], PC3.dw = e.pcoa.dw$points[, 3], PC1.du = e.pcoa.du$points[, 1], PC2.du = e.pcoa.du$points[, 2], PC3.du = e.pcoa.du$points[, 3], PC1.bc = e.pcoa.bc$points[, 1], PC2.bc = e.pcoa.bc$points[, 2], PC3.bc = e.pcoa.bc$points[, 3], label = kitome.meta$label, sample = kitome.meta$sample, kit = kitome.meta$kit, dilution = kitome.meta$dilution, sample_kit = kitome.meta$sample_kit, sample_dilution = kitome.meta$sample_dilution, kit_dilution = kitome.meta$kit_dilution, sample_kit_dilution = kitome.meta$sample_kit_dilution, total_reads = kitome.meta$total_reads)
+centroids.dw = aggregate(cbind(PC1.dw,PC2.dw)~sample_kit,data=pcoa_table,mean)
+centroids.du = aggregate(cbind(PC1.du,PC2.du)~sample_kit,data=pcoa_table,mean)
+centroids.bc = aggregate(cbind(PC1.bc,PC2.bc)~sample_kit,data=pcoa_table,mean)
+pcoa_table = merge(pcoa_table,centroids.dw,by="sample_kit",suffixes=c("",".centroid"))
+pcoa_table = merge(pcoa_table,centroids.du,by="sample_kit",suffixes=c("",".centroid"))
+pcoa_table = merge(pcoa_table,centroids.bc,by="sample_kit",suffixes=c("",".centroid"))
+
+# PCoA plot, unweighted UniFrac
+duplot = ggplot(pcoa_table) +
+  geom_point(aes(x=PC1.du, y=PC2.du, shape = kit, color=sample)) +
+  scale_shape_manual(values=c(1,2,3)) +
+#  geom_segment(aes(x=PC1.du.centroid, y=PC2.du.centroid, xend=PC1.du, yend=PC2.du, color=sample)) +
+  labs(x=paste("PCoA1",e.PC1.du,"%"), y=paste("PCoA2",e.PC2.du,"%")) +
+  geom_text(aes(x=PC1.du, y=PC2.du, label=label), size=2)
+
+# PCoA plot, weighted UniFrac
+dwplot = ggplot(pcoa_table) +
+  geom_point(aes(x=PC1.dw, y=PC2.dw, shape = kit, size=total_reads, color=sample)) +
+  scale_shape_manual(values=c(1,2,3)) +
+  geom_segment(aes(x=PC1.dw.centroid, y=PC2.dw.centroid, xend=PC1.dw, yend=PC2.dw, color=sample)) +
+  scale_size_area() +
+  labs(x=paste("PCoA1",e.PC1.dw,"%"), y=paste("PCoA2",e.PC2.dw,"%")) +
+  geom_text(aes(x=PC1.dw, y=PC2.dw, label=label), size=2)
+
+# PCoA plot, Bray-Curtis
+bcplot = ggplot(pcoa_table) +
+  geom_point(aes(x=PC1.bc, y=PC2.bc, shape = kit, size=total_reads, color=sample)) +
+  scale_shape_manual(values=c(1,2,3)) +
+  geom_segment(aes(x=PC1.bc.centroid, y=PC2.bc.centroid, xend=PC1.bc, yend=PC2.bc, color=sample)) +
+  scale_size_area() +
+  labs(x=paste("PCoA1",e.PC1.bc,"%"), y=paste("PCoA2",e.PC2.bc,"%")) +
+  geom_text(aes(x=PC1.bc, y=PC2.bc, label=label), size=2)
+
+plot_grid(duplot,dwplot,bcplot,ncol = 1, nrow = 3, scale=1, labels="AUTO")
+
+
+#### Online Resource 6
+# Comparison between negative controls and samples, per dilution and kit
+position_D0MB = c(11,23,35,47,59)
+position_D0QIA = c(12,24,36,48,60)
+position_D1MB = c(1,13,25,37,49)
+position_D1QIA = c(2,14,26,38,50)
+position_D2MB = c(3,15,27,39,51)
+position_D2QIA = c(4,16,28,40,52)
+position_D3MB = c(5,17,29,41,53)
+position_D3QIA = c(6,18,30,42,54)
+position_D4MB = c(7,19,31,43,55)
+position_D4QIA = c(8,20,32,44,56)
+position_D5MB = c(9,21,33,45,57)
+position_D5QIA = c(10,22,34,46,58)
+position_controlsMB = c(61,63:67,69)
+position_controlsQIA = c(62:64,67:69)
+
+# MoBio
+kitome.D0MB_ctrl.relfreq.otus = rbind(kitome.relative.otus[position_D0MB,],kitome.relative.otus[position_controlsMB,])
+kitome.D0MB_ctrl.meta = rbind(kitome.meta[position_D0MB,],kitome.meta[position_controlsMB,])
+bc.D0MB_ctrl.rel = vegdist(kitome.D0MB_ctrl.relfreq.otus, method = "bray", upper = TRUE, diag = TRUE)
+adonis(as.dist(bc.D0MB_ctrl.rel) ~ kit, data = kitome.D0MB_ctrl.meta)
+
+kitome.D1MB_ctrl.relfreq.otus = rbind(kitome.relative.otus[position_D1MB,],kitome.relative.otus[position_controlsMB,])
+kitome.D1MB_ctrl.meta = rbind(kitome.meta[position_D1MB,],kitome.meta[position_controlsMB,])
+bc.D1MB_ctrl.rel = vegdist(kitome.D1MB_ctrl.relfreq.otus, method = "bray", upper = TRUE, diag = TRUE)
+adonis(as.dist(bc.D1MB_ctrl.rel) ~ kit, data = kitome.D1MB_ctrl.meta)
+
+kitome.D2MB_ctrl.relfreq.otus = rbind(kitome.relative.otus[position_D2MB,],kitome.relative.otus[position_controlsMB,])
+kitome.D2MB_ctrl.meta = rbind(kitome.meta[position_D2MB,],kitome.meta[position_controlsMB,])
+bc.D2MB_ctrl.rel = vegdist(kitome.D2MB_ctrl.relfreq.otus, method = "bray", upper = TRUE, diag = TRUE)
+adonis(as.dist(bc.D2MB_ctrl.rel) ~ kit, data = kitome.D2MB_ctrl.meta)
+
+kitome.D3MB_ctrl.relfreq.otus = rbind(kitome.relative.otus[position_D3MB,],kitome.relative.otus[position_controlsMB,])
+kitome.D3MB_ctrl.meta = rbind(kitome.meta[position_D3MB,],kitome.meta[position_controlsMB,])
+bc.D3MB_ctrl.rel = vegdist(kitome.D3MB_ctrl.relfreq.otus, method = "bray", upper = TRUE, diag = TRUE)
+adonis(as.dist(bc.D3MB_ctrl.rel) ~ kit, data = kitome.D3MB_ctrl.meta)
+
+kitome.D4MB_ctrl.relfreq.otus = rbind(kitome.relative.otus[position_D4MB,],kitome.relative.otus[position_controlsMB,])
+kitome.D4MB_ctrl.meta = rbind(kitome.meta[position_D4MB,],kitome.meta[position_controlsMB,])
+bc.D4MB_ctrl.rel = vegdist(kitome.D4MB_ctrl.relfreq.otus, method = "bray", upper = TRUE, diag = TRUE)
+adonis(as.dist(bc.D4MB_ctrl.rel) ~ kit, data = kitome.D4MB_ctrl.meta)
+
+kitome.D5MB_ctrl.relfreq.otus = rbind(kitome.relative.otus[position_D5MB,],kitome.relative.otus[position_controlsMB,])
+kitome.D5MB_ctrl.meta = rbind(kitome.meta[position_D5MB,],kitome.meta[position_controlsMB,])
+bc.D5MB_ctrl.rel = vegdist(kitome.D5MB_ctrl.relfreq.otus, method = "bray", upper = TRUE, diag = TRUE)
+adonis(as.dist(bc.D5MB_ctrl.rel) ~ kit, data = kitome.D5MB_ctrl.meta)
+
+#Qiagen
+kitome.D0QIA_ctrl.relfreq.otus = rbind(kitome.relative.otus[position_D0QIA,],kitome.relative.otus[position_controlsQIA,])
+kitome.D0QIA_ctrl.meta = rbind(kitome.meta[position_D0QIA,],kitome.meta[position_controlsQIA,])
+bc.D0QIA_ctrl.rel = vegdist(kitome.D0QIA_ctrl.relfreq.otus, method = "bray", upper = TRUE, diag = TRUE)
+adonis(as.dist(bc.D0QIA_ctrl.rel) ~ kit, data = kitome.D0QIA_ctrl.meta)
+
+kitome.D1QIA_ctrl.relfreq.otus = rbind(kitome.relative.otus[position_D1QIA,],kitome.relative.otus[position_controlsQIA,])
+kitome.D1QIA_ctrl.meta = rbind(kitome.meta[position_D1QIA,],kitome.meta[position_controlsQIA,])
+bc.D1QIA_ctrl.rel = vegdist(kitome.D1QIA_ctrl.relfreq.otus, method = "bray", upper = TRUE, diag = TRUE)
+adonis(as.dist(bc.D1QIA_ctrl.rel) ~ kit, data = kitome.D1QIA_ctrl.meta)
+
+kitome.D2QIA_ctrl.relfreq.otus = rbind(kitome.relative.otus[position_D2QIA,],kitome.relative.otus[position_controlsQIA,])
+kitome.D2QIA_ctrl.meta = rbind(kitome.meta[position_D2QIA,],kitome.meta[position_controlsQIA,])
+bc.D2QIA_ctrl.rel = vegdist(kitome.D2QIA_ctrl.relfreq.otus, method = "bray", upper = TRUE, diag = TRUE)
+adonis(as.dist(bc.D2QIA_ctrl.rel) ~ kit, data = kitome.D2QIA_ctrl.meta)
+
+kitome.D3QIA_ctrl.relfreq.otus = rbind(kitome.relative.otus[position_D3QIA,],kitome.relative.otus[position_controlsQIA,])
+kitome.D3QIA_ctrl.meta = rbind(kitome.meta[position_D3QIA,],kitome.meta[position_controlsQIA,])
+bc.D3QIA_ctrl.rel = vegdist(kitome.D3QIA_ctrl.relfreq.otus, method = "bray", upper = TRUE, diag = TRUE)
+adonis(as.dist(bc.D3QIA_ctrl.rel) ~ kit, data = kitome.D3QIA_ctrl.meta)
+
+kitome.D4QIA_ctrl.relfreq.otus = rbind(kitome.relative.otus[position_D4QIA,],kitome.relative.otus[position_controlsQIA,])
+kitome.D4QIA_ctrl.meta = rbind(kitome.meta[position_D4QIA,],kitome.meta[position_controlsQIA,])
+bc.D4QIA_ctrl.rel = vegdist(kitome.D4QIA_ctrl.relfreq.otus, method = "bray", upper = TRUE, diag = TRUE)
+adonis(as.dist(bc.D4QIA_ctrl.rel) ~ kit, data = kitome.D4QIA_ctrl.meta)
+
+kitome.D5QIA_ctrl.relfreq.otus = rbind(kitome.relative.otus[position_D5QIA,],kitome.relative.otus[position_controlsQIA,])
+kitome.D5QIA_ctrl.meta = rbind(kitome.meta[position_D5QIA,],kitome.meta[position_controlsQIA,])
+bc.D5QIA_ctrl.rel = vegdist(kitome.D5QIA_ctrl.relfreq.otus, method = "bray", upper = TRUE, diag = TRUE)
+adonis(as.dist(bc.D5QIA_ctrl.rel) ~ kit, data = kitome.D5QIA_ctrl.meta)
+
+
+# Analyses according to the taxonomic assignments ----
+
+#### Figure 3
+# barcharts for phylum (0.5% cutoff)
+phylum_for_barchart_MB = read.table(file = "phylum_MB.txt", header=T)
+phylum_for_barchart_QIA = read.table(file = "phylum_QIA.txt", header=T)
+
+ph_MB = melt(phylum_for_barchart_MB)
+A1<-ggplot(ph_MB, aes(x=ID, y=value, fill=variable)) + 
+  geom_bar(stat="identity") +
+  theme(axis.text.x = element_text(angle = 90, hjust = 1)) +
+  labs(x = "", y = "Relative abundance") +
+  guides(fill=guide_legend(title="Phylum")) +
+  scale_fill_brewer(palette="Paired") +
+  theme(legend.position="none")
+
+ph_QIA = melt(phylum_for_barchart_QIA)
+A2<-ggplot(ph_QIA, aes(x=ID, y=value, fill=variable)) + 
+  geom_bar(stat="identity") +
+  theme(axis.text.x = element_text(angle = 90, hjust = 1)) +
+  labs(x = "", y = "Relative abundance") +
+  guides(fill=guide_legend(title="Phylum")) +
+  scale_fill_brewer(palette="Paired") +
+  theme(legend.position="none")
+
+# barcharts for class (0.5% cutoff)
+class_for_barchart_MB = read.table(file = "class_MB.txt", header=T)
+class_for_barchart_QIA = read.table(file = "class_QIA.txt", header=T)
+
+cl_MB = melt(class_for_barchart_MB)
+B1<-ggplot(cl_MB, aes(x=ID, y=value, fill=variable)) + 
+  geom_bar(stat="identity") +
+  theme(axis.text.x = element_text(angle = 90, hjust = 1)) +
+  labs(x = "", y = "Relative abundance") +
+  guides(fill=guide_legend(title="Class")) +
+  scale_fill_brewer(palette="Paired") +
+  theme(legend.position="none")
+
+cl_QIA = melt(class_for_barchart_QIA)
+B2<-ggplot(cl_QIA, aes(x=ID, y=value, fill=variable)) + 
+  geom_bar(stat="identity") +
+  theme(axis.text.x = element_text(angle = 90, hjust = 1)) +
+  labs(x = "", y = "Relative abundance") +
+  guides(fill=guide_legend(title="Class")) +
+  scale_fill_brewer(palette="Paired") +
+  theme(legend.position="none")
+
+plot_grid(A1,A2,B1,B2,ncol = 2, nrow = 2, scale=1, labels="AUTO")
+
+
+#### Online Resource 7
+# barcharts for genus (0.5% cutoff)
+genus_for_barchart_MB = read.table(file = "genus_MB.txt", header=T)
+genus_for_barchart_QIA = read.table(file = "genus_QIA.txt", header=T)
+
+gen_MB = melt(genus_for_barchart_MB)
+C1<-ggplot(gen_MB, aes(x=ID, y=value, fill=variable)) + 
+  geom_bar(stat="identity") +
+  theme(axis.text.x = element_text(angle = 90, hjust = 1)) +
+  labs(x = "", y = "Relative abundance") +
+  guides(fill=guide_legend(title="Genus"))
+
+gen_QIA = melt(genus_for_barchart_QIA)
+C2<-ggplot(gen_QIA, aes(x=ID, y=value, fill=variable)) + 
+  geom_bar(stat="identity") +
+  theme(axis.text.x = element_text(angle = 90, hjust = 1)) +
+  labs(x = "", y = "Relative abundance") +
+  guides(fill=guide_legend(title="Genus"))
+
+plot_grid(C1,C2,ncol = 2, nrow = 1, scale=1, labels="AUTO")
+
+
+### Online Resource 4
+# barcharts for undiluted samples
+phylum_D0 = read.table(file = "phylum_D0.txt", header=T)
+class_D0 = read.table(file = "class_D0.txt", header=T)
+genus_D0 = read.table(file = "genus_D0.txt", header=T)
+
+ph_D0 = melt(phylum_D0)
+A_D0<-ggplot(ph_D0, aes(x=ID, y=value, fill=variable)) + 
+  geom_bar(stat="identity") +
+  theme(axis.text.x = element_text(angle = 90, hjust = 1)) +
+  labs(x = "", y = "Relative abundance") +
+  guides(fill=guide_legend(title="Phylum")) +
+  scale_fill_brewer(palette="Paired")
+
+cl_D0 = melt(class_D0)
+B_D0<-ggplot(cl_D0, aes(x=ID, y=value, fill=variable)) + 
+  geom_bar(stat="identity") +
+  theme(axis.text.x = element_text(angle = 90, hjust = 1)) +
+  labs(x = "", y = "Relative abundance") +
+  guides(fill=guide_legend(title="Class")) +
+  scale_fill_brewer(palette="Paired")
+
+gen_D0 = melt(genus_D0)
+C_D0<-ggplot(gen_D0, aes(x=ID, y=value, fill=variable)) + 
+  geom_bar(stat="identity") +
+  theme(axis.text.x = element_text(angle = 90, hjust = 1)) +
+  labs(x = "", y = "Relative abundance") +
+  guides(fill=guide_legend(title="Genus"))
+
+plot_grid(A_D0,B_D0,C_D0,ncol = 1, nrow = 3, scale=1, labels="AUTO")
+
+# Alpha diversity analysis ----
+alpha_div = read.table(file = "kitome.an.D0.groups.summary", header = T, sep = "\t") # alpha diveristy
+
+wilcox.test(sobs ~ kit, data = alpha_div)
+wilcox.test(shannon ~ kit, data = alpha_div)
+wilcox.test(invsimpson ~ kit, data = alpha_div)
+
+aggregate(cbind(sobs,shannon,invsimpson)~kit, data=alpha_div, median)
+aggregate(cbind(sobs,shannon,invsimpson)~kit, data=alpha_div, IQR)
+
