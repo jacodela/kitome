@@ -1,4 +1,4 @@
-© Juan S. Escobar, 2017
+© Vidarium, 2017
 
 This folder contains the necessary files to replicate the results presented in the following paper:
 
